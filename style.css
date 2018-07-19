@@ -1,3 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 html{
   background-color: azure;
+}
+
+header {
+  text-align: center;;
+  margin: 50px;
 }
