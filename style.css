@@ -31,3 +31,10 @@ canvas {
   background-color: lightyellow;
   text-align: center;
 }
+
+#game {
+  position: relative;
+  width: 640px;
+  height: 320px;
+  margin: 0 auto;
+}
