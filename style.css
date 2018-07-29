@@ -79,3 +79,11 @@ button {
   font-family: cursive;
   border: 1px solid black;
 }
+
+canvas:hover {
+  background-color: lightblue;
+}
+
+button:hover {
+  background: green;
+}
