@@ -38,3 +38,21 @@ canvas {
   height: 320px;
   margin: 0 auto;
 }
+
+#tic {
+  position: relative;
+  margin: 0 auto;
+  height: 318px;
+  width: 318px;
+  display: inline-block;
+  float: left;
+}
+
+#rules {
+  position: relative;
+  width: 318px;
+  height: 318px;
+  text-align: center;
+  display: inline-block;
+  float: right;
+}
