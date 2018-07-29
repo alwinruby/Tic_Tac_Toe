@@ -56,3 +56,14 @@ canvas {
   display: inline-block;
   float: right;
 }
+
+p {
+  font-size: 26px;
+  margin: 15px;
+  color: brown;
+}
+
+h2 {
+  font-size: 35px;
+  color: brown;
+}
