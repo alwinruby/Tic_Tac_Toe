@@ -36,7 +36,11 @@ Question 6
     True - Both and tags are block level tags, that hold different forms of content within them. They take up the entire width of a web page.
 
 Question 7
-  <h1 id="first">Heading 1 </h1> <p id="first">Hello there!</p> Is this code correct?
+
+    #<h1 id="first">Heading 1 </h1>
+    #<p id="first">Hello there!</p>
+
+Is this code correct?
 
   No - In a document, an id of an element is unique to that element. It cannot be used for any other element. Since we've already used the id "first" for the element, we shouldn't use it for the element again.
 
@@ -52,9 +56,10 @@ How do you specify hover conditions for a button?
     button: hover { } - The pseudo selector "hover" is used along with the element's name to specify the hover condition for that particular element.
 
 Question 10
-<h2> tag is bigger than the <h1> tag. True or false.
 
-    False - tags are used to produce primary headings and tags are used to produce secondary headings. So, produces text that has a smaller font size than the tag.
+    # <h2> tag is bigger than the <h1> tag. True or false.
+
+False - tags are used to produce primary headings and tags are used to produce secondary headings. So, produces text that has a smaller font size than the tag.
 
 Question 11
 What is the procedure to align 2 block level elements side by side?
@@ -64,7 +69,7 @@ What is the procedure to align 2 block level elements side by side?
     (or)
     float: left;
 
-    Block elements like the and elements have the default display value as "block". Block level elements typically take up the entire width of the page, hence they cannot be aligned side by side. So, we should first change their display value to inline-block, which makes them flexible for alignment. Then, we can either give a right or left float value to align the elements to the left or right side of their parent block element.
+Block elements like the and elements have the default display value as "block". Block level elements typically take up the entire width of the page, hence they cannot be aligned side by side. So, we should first change their display value to inline-block, which makes them flexible for alignment. Then, we can either give a right or left float value to align the elements to the left or right side of their parent block element.
 
 Question 12
 The document's title, description and other meta characteristic are written within the following tag pairs.
@@ -105,11 +110,13 @@ What is the syntax of the canvas tag?
     <canvas>...</canvas>
 
 Question 19
-<meta> tag has a start and end tag. True or false?
+
+    # <meta> tag has a start and end tag. True or false?
 
   False - tag is an empty tag, meaning it does not have a start and end tag.
 
 Question 20
+
 The <br> tag creates ____ number of new lines in a document.
 
     one - The <br> tag creates exactly one new line/space in a document. On the other hand, a <p> tag creates 2 lines of space between the paragraph and the next element.
