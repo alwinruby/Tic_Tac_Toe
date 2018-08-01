@@ -82,9 +82,9 @@ Which is the root tag of a html document?
     <html> - tag is the root tag of the html document. It encompasses all the other tags inside it.
 
 Question 14
-Colors can only be mentioned by their names in a stylesheet. True or false?
+Colours can only be mentioned by their names in a stylesheet. True or false?
 
-    False - Colors can be mentioned by their names, their hexadecimal values (ex: #ffffff for white) or rgb values (ex: rgb(0,0,0) for black) in a stylesheet.
+    False - Colours can be mentioned by their names, their hexadecimal values (ex: #ffffff for white) or rgb values (ex: rgb(0,0,0) for black) in a stylesheet.
 
 Question 15
 Which property should we use to change the text size of an element?
