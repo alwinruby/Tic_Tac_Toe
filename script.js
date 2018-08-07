@@ -24,4 +24,12 @@ window.onload = function() {
   function newGame(){
     document.location.reload();
   }
+
+  //3. canvas click + retrieving the box's Number
+  //canvas click event
+  document.getElementById("tic").addEventListener("click", function(e)
+  {
+    boxClick(e.target.id);
+  });
+
 }
