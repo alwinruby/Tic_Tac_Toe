@@ -32,4 +32,30 @@ window.onload = function() {
     boxClick(e.target.id);
   });
 
+  function boxClick(numId){
+    box = document.getElementById(numId);
+    ctx =box.getContext("2d");
+
+    switch (numId) {
+      case "canvas1": num = 1;
+        break;
+      case "canvas1": num = 2;
+        break;
+      case "canvas1": num = 3;
+        break;
+      case "canvas1": num = 4;
+        break;
+      case "canvas1": num = 5;
+        break;
+      case "canvas1": num = 6;
+        break;
+      case "canvas1": num = 7;
+        break;
+      case "canvas1": num = 8;
+        break;
+      case "canvas1": num = 9;
+        break;
+    }
+  }
+
 }
