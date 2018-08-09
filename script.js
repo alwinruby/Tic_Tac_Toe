@@ -56,6 +56,24 @@ window.onload = function() {
       case "canvas1": num = 9;
         break;
     }
+
+    //4. Drawing the shapes on the canvases
+    if(filled[num-1] == false) {
+      if(gameOver == false) {
+        if(turn%2 !=  0) {
+
+        }
+        else {
+          
+        }
+      }
+      else {
+
+      }
+    }
+    else {
+
+    }
   }
 
 }
