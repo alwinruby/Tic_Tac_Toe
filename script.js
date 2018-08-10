@@ -61,11 +61,26 @@ window.onload = function() {
     if(filled[num-1] == false) {
       if(gameOver == false) {
         if(turn%2 !=  0) {
-
+          ctx.beginPath();
+          ctx.moveTo(15, 15);
+          ctx.lineTo(85, 85);
+          ctx.moveTo(85, 15);
+          ctx.lineTo(15, 85);
+          ctx.strokeStyle = "dodgerblue";
+          ctx.stroke();
+          ctx.closePath();
+          symbol[num - 1] = 'X';
         }
         else {
-          
+          ctx.beginPath();
+          ctx.arc(50, 50, 35, 0, 2 * Mat.PI, false);
+          ctx.strokeStyle = "dodgerblue";
+          ctx.stroke();
+          ctx.closePath();
+          symbol[num - 1] = 'O';
         }
+        turn++;
+        filled[num - 1] = true;
       }
       else {
 
