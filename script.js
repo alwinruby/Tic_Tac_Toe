@@ -3,6 +3,7 @@ Five parts to game
 1. Initial states
 2. Anonymous function
 */
+
 window.onload = function() {
   var num;
   var box;
@@ -19,12 +20,10 @@ window.onload = function() {
   //2. New Game button
   var n = document.getElementById("new");
   n.addEventListener("click", newGame);
-
   //newGame function
   function newGame(){
     document.location.reload();
   }
-
   //3. canvas click + retrieving the box's Number
   //canvas click event
   document.getElementById("tic").addEventListener("click", function(e)
@@ -56,9 +55,8 @@ window.onload = function() {
       case "canvas1": num = 9;
         break;
     }
-
     //4. Drawing the shapes on the canvases
-    if(filled[num-1] == false) {
+    if(filled[num - 1] == false) {
       if(gameOver == false) {
         if(turn%2 !=  0) {
           ctx.beginPath();
@@ -73,7 +71,7 @@ window.onload = function() {
         }
         else {
           ctx.beginPath();
-          ctx.arc(50, 50, 35, 0, 2 * Mat.PI, false);
+          ctx.arc(50, 50, 35, 0, 2 * Math.PI, false);
           ctx.strokeStyle = "dodgerblue";
           ctx.stroke();
           ctx.closePath();
