@@ -1,7 +1,5 @@
 /*
 Five parts to game
-1. Initial states
-2. Anonymous function
 */
 
 window.onload = function() {
@@ -18,8 +16,10 @@ window.onload = function() {
   winner = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
 
   //2. New Game button
+  //Create a new game click event
   var n = document.getElementById("new");
   n.addEventListener("click", newGame);
+
   //newGame function
   function newGame(){
     document.location.reload();
@@ -56,7 +56,7 @@ window.onload = function() {
         break;
     }
     //4. Drawing the shapes on the canvases
-    if(filled[num - 1] == false) {
+    if(filled[num-1] == false) {
       if(gameOver == false) {
         if(turn%2 !=  0) {
           ctx.beginPath();
@@ -67,7 +67,7 @@ window.onload = function() {
           ctx.strokeStyle = "dodgerblue";
           ctx.stroke();
           ctx.closePath();
-          symbol[num - 1] = 'X';
+          symbol[num-1] = 'X';
         }
         else {
           ctx.beginPath();
@@ -75,10 +75,18 @@ window.onload = function() {
           ctx.strokeStyle = "dodgerblue";
           ctx.stroke();
           ctx.closePath();
-          symbol[num - 1] = 'O';
+          symbol[num-1] = 'O';
         }
         turn++;
-        filled[num - 1] = true;
+        filled[num-1] = true;
+
+        //5. Winner check
+        var s = symbol[num-1];
+        for(var j=0; j < winner.length; j++) {
+					if((symbol[winner[j][0]] == s) && (symbol[winner[j][1]] == s) && (symbol[winner[j][2]] == s)) {
+						
+					}
+				}
       }
       else {
 
