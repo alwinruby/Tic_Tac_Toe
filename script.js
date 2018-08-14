@@ -1,7 +1,9 @@
 /*
 Five parts to game
 */
+// 5 parts
 
+//anonymous function
 window.onload = function() {
 	//1. Initial states
 	var num;
@@ -89,13 +91,19 @@ window.onload = function() {
 						gameOver = true;
 					}
 				}
+
+				//draw condition
+				// turn > 0 gameOver == false
+				if(turn > 9 && gameOver != true) {
+					document.getElementById("result").innerText = "GAME OVER! IT WAS A DRAW!";
+				}
 			}
 			else {
-
+				alert("Game is over. Please click on the New Game button to start again.");
 			}
 		}
 		else {
-
+			alert("This box was already filled. Please click on another one.")
 		}
 	}
 }
